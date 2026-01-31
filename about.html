@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Wealthy Graphix Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'] },
+                    colors: {
+                        brand: { 
+                            dark: '#0B0F19',
+                            card: '#111827',
+                            gold: '#FFD700',
+                            goldLight: '#FDE68A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B0F19; color: white; }
+        
+        /* Subtle Grid Background */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+
+        /* Gold Gradient Text */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #FFF7AD 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased bg-grid">
+
+    <nav class="fixed w-full z-50 bg-[#0B0F19]/90 backdrop-blur-lg border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="logo.png" alt="Logo" class="h-10 w-auto group-hover:opacity-80 transition"> 
+                <div class="flex flex-col leading-none">
+                    <span class="text-lg font-bold tracking-wide text-white">WEALTHY</span>
+                    <span class="text-sm font-semibold text-amber-500 tracking-widest">GRAPHIX</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="index.html" class="hover:text-amber-400 transition">Home</a>
+                <a href="services.html" class="hover:text-amber-400 transition">Services</a>
+                <a href="portfolio.html" class="hover:text-amber-400 transition">Portfolio</a>
+                <a href="about.html" class="text-amber-400 transition">About</a>
+                <a href="contact.html" class="px-6 py-2.5 bg-white text-black font-bold rounded-full hover:bg-amber-400 hover:scale-105 transition duration-300">
+                    Get a Quote
+                </a>
+            </div>
+
+            <button class="md:hidden text-2xl text-white"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <header class="relative pt-40 pb-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block mb-4 px-4 py-1.5 rounded-full border border-gray-700 bg-gray-900/50 text-amber-400 text-xs font-bold uppercase tracking-widest">
+                Our Story
+            </span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                From Passion to <span class="text-gold-gradient">Excellence</span>
+            </h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                Wealthy Graphix Studio began as a dream to create visuals that not only look stunning but also drive real business growth.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Journey</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
+                    What started as a small freelance operation has grown into a full-service creative studio dedicated to delivering premium digital experiences.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-amber-500/10 flex items-center justify-center">
+                        <i class="fa-solid fa-palette text-3xl text-amber-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Wealthy Designs</h3>
+                    <p class="text-gray-400 text-sm">
+                        It all began as Wealthy Designs, focused purely on graphic design — crafting logos, brand identities, and print materials that helped businesses stand out.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-amber-500/10 flex items-center justify-center">
+                        <i class="fa-solid fa-film text-3xl text-amber-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Wealthy Graphix</h3>
+                    <p class="text-gray-400 text-sm">
+                        As demand grew, we expanded into motion and storytelling, evolving into Wealthy Graphix. This marked our entry into captivating 2D animations and dynamic visuals.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-amber-500/10 flex items-center justify-center">
+                        <i class="fa-solid fa-layer-group text-3xl text-amber-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Wealthy Graphix Studio</h3>
+                    <p class="text-gray-400 text-sm">
+                        Today, we are Wealthy Graphix Studio — a complete creative powerhouse offering animation, design, web development, and software solutions under one roof.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-900/50 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Meet the Founder</h2>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    <strong>Akinjise Odunayo J.</strong> founded Wealthy Graphix Studio with a clear vision: to bridge creativity and technology in a way that creates lasting value for clients.
+                </p>
+                <p class="text-gray-400 leading-relaxed mb-8">
+                    Starting with graphic design skills honed through years of passion and self-taught expertise, Odunayo expanded the studio's capabilities into animation and digital development. With a relentless focus on quality, innovation, and client success, he leads a team committed to turning ideas into wealth-building visual assets.
+                </p>
+                <p class="text-gray-400 italic">
+                    "Great design isn't just beautiful — it's strategic. It tells your story, builds trust, and drives growth."
+                </p>
+            </div>
+
+            <div class="order-1 lg:order-2 relative group">
+                <div class="absolute inset-0 bg-amber-500/20 blur-3xl rounded-2xl opacity-40 group-hover:opacity-60 transition"></div>
+                <img src="founder.jpg" alt="Akinjise Odunayo J. - Founder of Wealthy Graphix Studio" class="relative rounded-2xl shadow-2xl border border-gray-700 w-full object-cover aspect-square">
+                <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-4 py-2 rounded-lg">
+                    <p class="font-bold">Akinjise Odunayo J.</p>
+                    <p class="text-sm text-amber-400">Founder & Creative Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Why Partner With Us?</h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
+                We don't just deliver projects — we become your creative growth partner, dedicated to elevating your brand at every stage.
+            </p>
+            <a href="contact.html" class="inline-block px-8 py-4 bg-amber-500 text-black font-bold rounded-lg hover:bg-amber-400 transition duration-300">
+                Start a Conversation
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-black pt-20 pb-10 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="text-xl font-bold tracking-tighter text-white">WEALTHY<span class="text-amber-500">GRAPHIX</span></span>
+                </div>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    A premium creative studio dedicated to elevating brands through animation, design, and technology.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-3 text-sm text-gray-500">
+                    <li><a href="index.html" class="hover:text-amber-500 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-amber-500 transition">About Us</a></li>
+                    <li><a href="portfolio.html" class="hover:text-amber-500 transition">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-amber-500 transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-6">Services</h4>
+                <ul class="space-y-3 text-sm text-gray-500">
+                    <li><a href="services.html" class="hover:text-amber-500 transition">2D Animation</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Graphic Design</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Web Development</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Printing</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-6">Contact</h4>
+                <ul class="space-y-3 text-sm text-gray-500">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-amber-500"></i>
+                        <span>123 Creative Avenue,<br>Tech District, NY</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-amber-500"></i>
+                        <span>hello@wealthygraphix.com</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-amber-500"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-600 text-sm">© 2023 Wealthy Graphix Studio. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="text-gray-500 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

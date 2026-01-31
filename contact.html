@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Wealthy Graphix Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'] },
+                    colors: {
+                        brand: { 
+                            dark: '#0B0F19',
+                            card: '#111827',
+                            gold: '#FFD700',
+                            goldLight: '#FDE68A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0B0F19; color: white; }
+        
+        /* Subtle Grid Background */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+
+        /* Gold Gradient Text */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #FFF7AD 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Button Hover Glow */
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="antialiased bg-grid">
+
+    <nav class="fixed w-full z-50 bg-[#0B0F19]/90 backdrop-blur-lg border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="logo.png" alt="Logo" class="h-10 w-auto group-hover:opacity-80 transition"> 
+                <div class="flex flex-col leading-none">
+                    <span class="text-lg font-bold tracking-wide text-white">WEALTHY</span>
+                    <span class="text-sm font-semibold text-amber-500 tracking-widest">GRAPHIX</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="index.html" class="hover:text-amber-400 transition">Home</a>
+                <a href="services.html" class="hover:text-amber-400 transition">Services</a>
+                <a href="portfolio.html" class="hover:text-amber-400 transition">Portfolio</a>
+                <a href="about.html" class="hover:text-amber-400 transition">About</a>
+                <a href="contact.html" class="px-6 py-2.5 bg-amber-500 text-black font-bold rounded-full hover:bg-amber-400 hover:scale-105 transition duration-300 btn-glow">
+                    Get a Quote
+                </a>
+            </div>
+
+            <button class="md:hidden text-2xl text-white"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <header class="relative pt-40 pb-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block mb-4 px-4 py-1.5 rounded-full border border-gray-700 bg-gray-900/50 text-amber-400 text-xs font-bold uppercase tracking-widest">
+                Let's Connect
+            </span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Get in <span class="text-gold-gradient">Touch</span>
+            </h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                Have a project in mind? Questions? Or just want to say hello? We're here to help bring your vision to life.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <!-- Contact Information -->
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Contact Information</h2>
+                <p class="text-gray-400 leading-relaxed mb-10">
+                    Reach out to us directly or fill out the form. We typically respond within 24 hours.
+                </p>
+
+                <div class="space-y-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-location-dot text-xl text-amber-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-1">Address</h3>
+                            <p class="text-gray-400">123 Creative Avenue,<br>Tech District, NY</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-envelope text-xl text-amber-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-1">Email</h3>
+                            <p class="text-gray-400">hello@wealthygraphix.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-phone text-xl text-amber-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-1">Phone</h3>
+                            <p class="text-gray-400">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <h3 class="font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-500 transition">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-500 transition">
+                            <i class="fa-brands fa-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-500 transition">
+                            <i class="fa-brands fa-linkedin text-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-500 transition">
+                            <i class="fa-brands fa-github text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-gray-900/50 rounded-2xl border border-gray-800 p-8 lg:p-10">
+                <h2 class="text-3xl font-bold mb-8">Send Us a Message</h2>
+                
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-amber-500 focus:outline-none transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-amber-500 focus:outline-none transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-amber-500 focus:outline-none transition">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-amber-500 focus:outline-none transition resize-none"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="w-full px-8 py-4 bg-amber-500 text-black font-bold rounded-lg hover:bg-amber-400 btn-glow transition duration-300">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+
+                <p class="text-xs text-gray-500 mt-6">
+                    Note: This is a static demo form. In a live site, connect it to a backend service like Formspree, EmailJS, or your own server.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-amber-500 text-black text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="text-lg font-medium opacity-80 mb-8">We're excited to work with you and bring your ideas to life.</p>
+            <a href="tel:+15551234567" class="inline-block px-10 py-4 bg-black text-white font-bold rounded-full hover:bg-gray-800 hover:scale-105 transition shadow-xl">
+                Call Us Now
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-black pt-20 pb-10 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="text-xl font-bold tracking-tighter text-white">WEALTHY<span class="text-amber-500">GRAPHIX</span></span>
+                </div>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    A premium creative studio dedicated to elevating brands through animation, design, and technology.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-3 text-sm text-gray-500">
+                    <li><a href="index.html" class="hover:text-amber-500 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-amber-500 transition">About Us</a></li>
+                    <li><a href="portfolio.html" class="hover:text-amber-500 transition">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-amber-500 transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-6">Services</h4>
+                <ul class="space-y-3 text-sm text-gray-500">
+                    <li><a href="services.html" class="hover:text-amber-500 transition">2D Animation</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Graphic Design</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Web Development</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Printing</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-6">Contact</h4>
+                <ul class="space-y-3 text-sm text-gray-500">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-amber-500"></i>
+                        <span>123 Creative Avenue,<br>Tech District, NY</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-amber-500"></i>
+                        <span>hello@wealthygraphix.com</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-amber-500"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-600 text-sm">© 2023 Wealthy Graphix Studio. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="text-gray-500 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
